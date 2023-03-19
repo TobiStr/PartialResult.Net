@@ -2,6 +2,13 @@
 
 namespace ResultType;
 
+public enum Success
+{
+    Success,
+    PartialSuccess,
+    Error
+}
+
 /// <summary>
 /// Used to determine, whether a method executes successfully, partially successful or not. Has implicit cast implemented:
 /// Return <see cref="Exception"/> (or inherited type) to return a Result with Success set to 'Error'.
